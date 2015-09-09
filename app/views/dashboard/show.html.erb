@@ -4,7 +4,7 @@
       <div class="dashboard-profile-card">
         <div class="row">
           <div class="col-sm-4">
-            <img class="thumbnail avatar" src="https://pbs.twimg.com/profile_images/519994762581925888/QHOq7CeP_bigger.jpeg"> 
+            <img class="thumbnail avatar" src="<%=current_user.profile_image_url %>"> 
           </div>
           <div class="col-sm-8">
             <div class="user-fields">
@@ -16,15 +16,15 @@
         <div class="row stats">
           <div class="col-sm-4">
             <span class="stat-label">TWEETS</span>
-            <span class="stat-value">177</span>
+            <span class="stat-value"><%= current_user.tweets_count %></span>
           </div>
           <div class="col-sm-4">
             <span class="stat-label">FOLLOWING</span>
-            <span class="stat-value">273</span>
+            <span class="stat-value"><%= current_user.following_count %></span>
           </div>
           <div class="col-sm-4">
             <span class="stat-label">FOLLOWERS</span>
-            <span class="stat-value">61</span>
+            <span class="stat-value"><%= current_user.followers_count %></span>
           </div>
         </div>
       </div>
