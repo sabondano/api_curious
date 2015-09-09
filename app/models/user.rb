@@ -16,4 +16,20 @@ class User < ActiveRecord::Base
   def service
     @service ||= TwitterService.new(self)
   end
+
+  def profile_image_url
+    service.connection.user.profile_image_url
+  end
+
+  def tweets_count
+    service.connection.user.tweets_count
+  end
+
+  def following_count
+    service.connection.user.friends_count
+  end
+
+  def followers_count
+    service.connection.user.followers_count
+  end
 end
