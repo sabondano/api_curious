@@ -1,8 +1,0 @@
-<% if current_user %>
-  <p>hello, <%= current_user.name %></p>
-  <%= link_to "logout", logout_path, class: "btn btn-large btn-default" %>
-<% else %>
-  <%= link_to "login", login_path, class: "btn btn-large btn-default" %>
-<% end %>
-
-

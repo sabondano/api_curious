@@ -1,0 +1,27 @@
+#body-welcome {
+  background: url(image_path("twitter_background.png")) center center fixed;
+  .container-welcome {
+    padding-top: 30vh;
+    text-align: center;
+    .welcome {
+      color: white;
+      font-weight: 100;
+    }
+    h3.welcome {
+      font-weight: 200;
+      opacity: 0.5;
+    }
+    a.btn.btn-lg.btn-default.btn-welcome {
+      width: 150px;
+      color: white;
+      margin-top: 5vh;
+      background-color: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    a.btn.btn-lg.btn-default.btn-welcome:hover {
+      background: #fff;
+      color: #55acee;
+    }
+  }
+}
