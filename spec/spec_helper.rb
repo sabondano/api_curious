@@ -2,6 +2,9 @@ require 'simplecov'
 SimpleCov.start
 
 RSpec.configure do |config|
+  require 'helpers'
+  include Helpers
+
   config.backtrace_exclusion_patterns << %r{/gems/}
 
   config.before(:suite) do
