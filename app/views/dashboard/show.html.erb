@@ -1,2 +1,43 @@
-<p>hello, <%= current_user.name %></p>
-<%= link_to "logout", logout_path, class: "btn btn-large btn-default" %>
+<div class="container-fluid container-dashboard">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="dashboard-profile-card">
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="thumbnail avatar" src="https://pbs.twimg.com/profile_images/519994762581925888/QHOq7CeP_bigger.jpeg"> 
+          </div>
+          <div class="col-sm-8">
+            <div class="user-fields">
+              <h4><%= current_user.name %></h4>
+              <p class="text-muted screen-name">@<%= current_user.screen_name %></p>
+            </div>
+          </div>
+        </div>
+        <div class="row stats">
+          <div class="col-sm-4">
+            <span class="stat-label">TWEETS</span>
+            <span class="stat-value">177</span>
+          </div>
+          <div class="col-sm-4">
+            <span class="stat-label">FOLLOWING</span>
+            <span class="stat-value">273</span>
+          </div>
+          <div class="col-sm-4">
+            <span class="stat-label">FOLLOWERS</span>
+            <span class="stat-value">61</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="tweet">
+        <div class="row">
+          Feed
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      Who to follow
+    </div>
+  </div>
+</div> <!-- /container-fluid -->

@@ -14,7 +14,7 @@ feature "user logs in with twitter" do
 
     expect(current_path).to eq("/dashboard")
     expect(page).to have_content("Sebastian")
-    expect(page).to have_link("logout")
+    expect(page).to have_link("Log out")
   end
 
   scenario "logging in and logging out" do
@@ -26,9 +26,9 @@ feature "user logs in with twitter" do
 
     expect(current_path).to eq("/dashboard")
     expect(page).to have_content("Sebastian")
-    expect(page).to have_link("logout")
+    expect(page).to have_link("Log out")
 
-    click_link "logout"
+    click_link "Log out"
 
     expect(current_path).to eq("/")
     expect(page).to_not have_content("Sebastian")
