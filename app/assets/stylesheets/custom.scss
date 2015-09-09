@@ -25,3 +25,63 @@
     }
   }
 }
+
+body {
+  background-color: #f5f8fa;
+}
+
+.navbar-dashboard {
+  background-color: #fff;
+  .logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-top: 14px;
+  }
+}
+
+.container-dashboard {
+  margin-top: 10vh;
+}
+
+.dashboard-profile-card {
+  border: 1px solid #e1e8ed;
+  background: #FFF;
+  border-radius: 6px; 
+  .screen-name {
+    margin-top: -10px;
+  }
+  .avatar {
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 10px 0 0 8px;
+    padding: 1px;
+    vertical-align: bottom;
+  }
+  .user-fields {
+    margin-top: 40px;
+  }
+  .stats {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    .stat-label {
+      color: #8c9ca9; 
+      font-size: 10px;
+    }
+    .stat-value {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      color: #0084B4;
+    }
+  }
+}
+
+.tweet {
+  border: 1px solid #e1e8ed;
+  background: #FFF;
+  border-radius: 6px; 
+}

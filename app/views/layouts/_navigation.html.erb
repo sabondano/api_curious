@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-dashboard">
+  <div class="container">
+    <%= image_tag "TwitterLogo_blue.png", class: "logo" %>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <%= link_to "Log out", logout_path %>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
