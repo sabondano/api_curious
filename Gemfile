@@ -20,6 +20,9 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'pry'
 end
 
 gem 'rails_12factor', group: :production
