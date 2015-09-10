@@ -5,7 +5,8 @@ module Helpers
     # then, provide a set of fake oauth data that
     # omniauth will use when a user tries to authenticate:
     OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
-      provider: 'twitter',
+      provider: "twitter",
+      uid: "380478790",
       extra: {
         raw_info: {
           user_id: "1234",
