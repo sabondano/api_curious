@@ -36,4 +36,8 @@ class User < ActiveRecord::Base
   def home_timeline
     service.connection.home_timeline
   end
+
+  def tweet(content)
+    service.connection.update(content) unless content.length > 140
+  end
 end

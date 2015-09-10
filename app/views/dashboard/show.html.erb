@@ -30,6 +30,12 @@
       </div>
     </div>
     <div class="col-sm-6">
+      <div class="tweet tweet-form">
+        <%= form_tag("/tweet", method: :post) do %>
+          <%= text_area_tag(:tweet, "What's happening?", class: "form-control tweet-text-area") %>
+          <%= submit_tag("Tweet", class: "btn btn-default btn-tweet") %>
+        <% end %>
+      </div>
       <% current_user.home_timeline.each do |tweet| %>
         <div class="tweet">
           <div class="row">
