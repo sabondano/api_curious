@@ -54,9 +54,10 @@ body {
     margin-top: -10px;
   }
   .avatar {
+    float: left;
     background-color: #fff;
     border-radius: 6px;
-    margin: 10px 0 0 8px;
+    margin: 10px 10px 0 8px;
     padding: 1px;
     vertical-align: bottom;
   }
@@ -66,7 +67,9 @@ body {
   .stats {
     margin-top: 10px;
     margin-bottom: 5px;
-    padding-left: 10px;
+    .first-stat-group {
+      padding-left: 10px;
+    }
     .stat-label {
       color: #8c9ca9; 
       font-size: 10px;
@@ -92,7 +95,7 @@ body {
     margin-right: 10px;
   }
   .container-tweet-details {
-    
+
   }
   .screen-name {
     color: #8c9ca9;
