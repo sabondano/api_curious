@@ -1,8 +1,10 @@
 require 'simplecov'
+require 'vcr_setup'
+require 'webmock'
+require 'helpers'
 SimpleCov.start
 
 RSpec.configure do |config|
-  require 'helpers'
   include Helpers
 
   config.backtrace_exclusion_patterns << %r{/gems/}
@@ -31,5 +33,4 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
-
 end

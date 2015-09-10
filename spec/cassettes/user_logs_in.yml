@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/account/verify_credentials.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Length:
+      - '87'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Sep 2015 19:15:59 GMT
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A144191255970837888; Domain=.twitter.com; Path=/; Expires=Sat,
+        09-Sep-2017 19:15:59 UTC
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 14c4489a62f45b36772ce109e5844480
+      X-Response-Time:
+      - '4'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":[{"code":215,"message":"Bad Authentication data."}]}'
+    http_version: 
+  recorded_at: Thu, 10 Sep 2015 19:15:59 GMT
+recorded_with: VCR 2.9.3

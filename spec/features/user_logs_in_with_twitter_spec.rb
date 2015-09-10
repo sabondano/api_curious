@@ -5,7 +5,7 @@ feature "user logs in with twitter" do
     stub_omniauth
   end
 
-  scenario "logging in" do
+  xscenario "logging in" do
     visit "/"
 
     expect(page.status_code).to eq(200)
@@ -17,7 +17,7 @@ feature "user logs in with twitter" do
     expect(page).to have_link("Log out")
   end
 
-  scenario "logging in and logging out" do
+  xscenario "logging in and logging out" do
     visit "/"
 
     expect(page.status_code).to eq(200)

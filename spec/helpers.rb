@@ -9,13 +9,13 @@ module Helpers
       extra: {
         raw_info: {
           user_id: "1234",
-          name: "Sebastian",
+          name: "Sebastian Abondano", 
           screen_name: "sabondano1",
         }
       },
       credentials: {
-        token: "pizza",
-        secret: "secretpizza"
+        token: "380478790-p7OtDesG3Oay2lhtwJh5h2BRxHEfX5MfCZNnolcG",
+        secret: "uUezHHZjR2SRFrxbQcteAzzjlxsSHJMHiTTOtJeo29uyI"
       }
     })
   end
