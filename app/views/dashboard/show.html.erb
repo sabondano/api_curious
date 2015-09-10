@@ -30,11 +30,22 @@
       </div>
     </div>
     <div class="col-sm-6">
-      <div class="tweet">
-        <div class="row">
-          Feed
-        </div>
+      <% current_user.home_timeline.each do |tweet| %>
+        <div class="tweet">
+          <div class="row">
+            <div class="col-sm-12">
+              <img class="thumbnail-avatar" src="<%= tweet.user.profile_image_url %>">
+                <strong>
+                  <%= tweet.user.name %> 
+                </strong>
+                <span class="screen-name">
+                  @<%= tweet.user.screen_name %>
+                </span>
+              <p><%= tweet.full_text %></p>
+            </div>
+          </div>
       </div>
+      <% end %>
     </div>
     <div class="col-sm-3">
       Who to follow

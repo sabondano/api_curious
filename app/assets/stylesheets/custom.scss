@@ -84,4 +84,18 @@ body {
   border: 1px solid #e1e8ed;
   background: #FFF;
   border-radius: 6px; 
+  padding: 12px;
+  .thumbnail-avatar {
+    float: left;
+    border-radius: 6px;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+  .container-tweet-details {
+    
+  }
+  .screen-name {
+    color: #8c9ca9;
+    font-size: 13px;
+  }
 }
