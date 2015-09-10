@@ -32,4 +32,8 @@ class User < ActiveRecord::Base
   def followers_count
     service.connection.user.followers_count
   end
+
+  def home_timeline
+    service.connection.home_timeline
+  end
 end
