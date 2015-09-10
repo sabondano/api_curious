@@ -9,4 +9,10 @@ class DashboardController < ApplicationController
 
     redirect_to dashboard_path
   end
+
+  def favorite
+    current_user.favorite(params[:tweet_id])
+
+    redirect_to dashboard_path
+  end
 end

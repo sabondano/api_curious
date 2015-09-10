@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
   root 'welcome#show'
   post '/tweet', to: 'dashboard#tweet'
+  post '/favorite', to: 'dashboard#favorite'
 end

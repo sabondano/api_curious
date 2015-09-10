@@ -41,16 +41,31 @@
           <div class="row">
             <div class="col-sm-12">
               <img class="thumbnail-avatar" src="<%= tweet.user.profile_image_url %>">
-                <strong>
-                  <%= tweet.user.name %> 
-                </strong>
-                <span class="screen-name">
-                  @<%= tweet.user.screen_name %>
-                </span>
-              <p><%= tweet.full_text %></p>
+              <strong>
+                <%= tweet.user.name %> 
+              </strong>
+              <span class="screen-name">
+                @<%= tweet.user.screen_name %>
+            </span>
+            <p><%= tweet.full_text %></p>
+            <% if tweet.favorited? %>
+              <span class="btn btn-favorite glyphicon glyphicon-star favorited-star"
+                    aria-hidden="true"></span>
+            <% else %>
+              <%= form_tag(favorite_path(tweet_id: tweet.id), method: :post) do %>
+                <button type="submit" class="btn btn-favorite">
+                  <span class="glyphicon glyphicon-star favorite-star"
+                        aria-hidden="true"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Favorite">
+                  </span>
+                </button>
+              <% end %>
+            <% end %>
             </div>
           </div>
-      </div>
+        </div>
       <% end %>
     </div>
     <div class="col-sm-3">

@@ -40,4 +40,8 @@ class User < ActiveRecord::Base
   def tweet(content)
     service.connection.update(content) unless content.length > 140
   end
+
+  def favorite(tweet_id)
+    service.connection.favorite(tweet_id)
+  end
 end
