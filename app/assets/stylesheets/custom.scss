@@ -101,6 +101,25 @@ body {
     color: #8c9ca9;
     font-size: 13px;
   }
+  .btn-favorite {
+    padding: 0px;
+    border: 0px;
+    margin-left: 60px;
+    background-color: transparent;
+  }
+  .favorited-star {
+    cursor: default;
+    opacity: 1;
+    color: #ffac33;
+  }
+  .favorite-star {
+    opacity: 0.3;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      color: #ffac33;
+    }
+  }
 }
 
 .tweet-form {
