@@ -126,7 +126,7 @@ body {
   .btn-retweet {
     padding: 0px;
     border: 0px;
-    margin-left: 60px;
+    margin-left: 20px;
     background-color: transparent;
   }
   .retweeted-arrows {
@@ -142,6 +142,20 @@ body {
       color: #5c913b;
     }
   }
+  .btn-reply {
+    padding: 0px;
+    border: 0px;
+    margin-left: 60px;
+    background-color: transparent;
+  }
+  .reply-arrow {
+    opacity: 0.3;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      color: #0084B4;
+    }
+  }
 }
 
 .tweet-form {
@@ -155,6 +169,10 @@ body {
     color: white;
     float: right;
   }
+}
+
+.reply-form {
+  display: none;
 }
 
 #signature {

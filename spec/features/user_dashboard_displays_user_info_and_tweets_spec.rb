@@ -13,7 +13,7 @@ feature "user dashbaord displays user info and tweets" do
       expect(current_path).to eq("/dashboard")
       expect(page).to have_content("Sebastian Abondano")
       expect(page).to have_content("@sabondano1")
-      expect(page).to have_css("div.tweet", count: 21)
+      expect(page).to have_css("div.tweet", count: 41)
     end
   end
 end

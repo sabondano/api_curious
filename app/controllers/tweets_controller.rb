@@ -19,4 +19,9 @@ class TweetsController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def reply
+    current_user.reply(params[:tweet], params[:tweet_id])
+
+    redirect_to dashboard_path
+  end
 end

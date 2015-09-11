@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   post '/tweet', to: 'tweets#tweet'
   post '/favorite', to: 'tweets#favorite'
   post '/retweet', to: 'tweets#retweet'
+  post '/reply', to: 'tweets#reply'
 end
