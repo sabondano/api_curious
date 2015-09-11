@@ -48,4 +48,8 @@ class User < ActiveRecord::Base
   def retweet(tweet_id)
     service.connection.retweet(tweet_id)
   end
+
+  def reply(content, tweet_id)
+    service.connection.update(content, in_reply_to_status_id: tweet_id)
+  end
 end
