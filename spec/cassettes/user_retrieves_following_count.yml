@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/account/verify_credentials.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - OAuth oauth_consumer_key="qBJMcAQzd593OTQk9cMevKtln", oauth_nonce="8cce2750fbfe3976a48b7a0d41e04f63",
+        oauth_signature="InjaHKI0EKa%2BmAoYHQ%2FKGJTchzM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1441990411", oauth_token="380478790-p7OtDesG3Oay2lhtwJh5h2BRxHEfX5MfCZNnolcG",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1045'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 11 Sep 2015 16:53:31 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Fri, 11 Sep 2015 16:53:31 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A144199041156290132; Domain=.twitter.com; Path=/; Expires=Sun,
+        10-Sep-2017 16:53:31 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - d36d7f9154da18a5ebf58ad5d2d5e6a4
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '12'
+      X-Rate-Limit-Reset:
+      - '1441990633'
+      X-Response-Time:
+      - '280'
+      X-Transaction:
+      - 503c6c8d52e818ed
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      - BouncerExempt
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":380478790,"id_str":"380478790","name":"Sebastian Abondano","screen_name":"sabondano1","location":"","description":"I
+        code all the things. Co-Creator of @mywebrc","url":"http:\/\/t.co\/ds4U8qbPSA","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/ds4U8qbPSA","expanded_url":"http:\/\/sebastianabondano.tumblr.com\/","display_url":"sebastianabondano.tumblr.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":61,"friends_count":274,"listed_count":0,"created_at":"Mon
+        Sep 26 18:28:03 +0000 2011","favourites_count":36,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":177,"lang":"en","status":{"created_at":"Sun
+        Sep 06 17:42:18 +0000 2015","id":640580800409243648,"id_str":"640580800409243648","text":"Functional
+        Object-Oriented Design:\n https:\/\/t.co\/bRfjG5h04W","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\"
+        rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/bRfjG5h04W","expanded_url":"https:\/\/medium.com\/@bradurani\/improving-your-web-app-with-functional-object-oriented-design-5218f9732b74","display_url":"medium.com\/@bradurani\/imp\u2026","indices":[36,59]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/519994762581925888\/QHOq7CeP_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/519994762581925888\/QHOq7CeP_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/380478790\/1412811927","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Fri, 11 Sep 2015 16:53:32 GMT
+recorded_with: VCR 2.9.3
