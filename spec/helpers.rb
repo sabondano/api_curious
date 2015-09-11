@@ -15,8 +15,8 @@ module Helpers
         }
       },
       credentials: {
-        token: "380478790-p7OtDesG3Oay2lhtwJh5h2BRxHEfX5MfCZNnolcG",
-        secret: "uUezHHZjR2SRFrxbQcteAzzjlxsSHJMHiTTOtJeo29uyI"
+        token: ENV["twitter_access_token"],
+        secret: ENV["twitter_access_token_secret"]
       }
     })
   end
