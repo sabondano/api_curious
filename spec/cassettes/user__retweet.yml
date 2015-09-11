@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/retweet/642382895835926528.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - OAuth oauth_consumer_key="qBJMcAQzd593OTQk9cMevKtln", oauth_nonce="ea74c2762fa8953571923f63b68d0585",
+        oauth_signature="3miYmMsn2O8qc0ALUmSYUMS29E4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1441991713", oauth_token="380478790-p7OtDesG3Oay2lhtwJh5h2BRxHEfX5MfCZNnolcG",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1649'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 11 Sep 2015 17:15:14 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Fri, 11 Sep 2015 17:15:14 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A144199171406787575; Domain=.twitter.com; Path=/; Expires=Sun,
+        10-Sep-2017 17:15:14 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - dd00b923b180ae36e00e45f20aebcceb
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '75'
+      X-Transaction:
+      - e5c2479cf75ac159
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"created_at":"Fri Sep 11 17:15:14 +0000 2015","id":642385924769251328,"id_str":"642385924769251328","text":"RT
+        @oldpicsarchive: The crew of Apollo 9 heading out to the launchpad. http:\/\/t.co\/kyVe1A6lww","source":"\u003ca
+        href=\"http:\/\/127.0.0.1:3000\/\" rel=\"nofollow\"\u003eSebastian''s Twitter
+        Feed\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":380478790,"id_str":"380478790","name":"Sebastian
+        Abondano","screen_name":"sabondano1","location":"","description":"I code all
+        the things. Co-Creator of @mywebrc","url":"http:\/\/t.co\/ds4U8qbPSA","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/ds4U8qbPSA","expanded_url":"http:\/\/sebastianabondano.tumblr.com\/","display_url":"sebastianabondano.tumblr.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":61,"friends_count":274,"listed_count":0,"created_at":"Mon
+        Sep 26 18:28:03 +0000 2011","favourites_count":37,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":178,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/519994762581925888\/QHOq7CeP_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/519994762581925888\/QHOq7CeP_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/380478790\/1412811927","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Fri
+        Sep 11 17:03:11 +0000 2015","id":642382895835926528,"id_str":"642382895835926528","text":"The
+        crew of Apollo 9 heading out to the launchpad. http:\/\/t.co\/kyVe1A6lww","source":"\u003ca
+        href=\"http:\/\/bufferapp.com\" rel=\"nofollow\"\u003eBuffer\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":2441831348,"id_str":"2441831348","name":"Old
+        Pics Archive","screen_name":"oldpicsarchive","location":"London, UK","description":"The
+        most interesting historical photos. Follow, discuss, share!\ncontact: historypicsarchive@gmail.com","url":"http:\/\/t.co\/7nepGDERnG","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/7nepGDERnG","expanded_url":"http:\/\/www.oldpicsarchive.com","display_url":"oldpicsarchive.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":344615,"friends_count":0,"listed_count":4072,"created_at":"Sun
+        Apr 13 15:04:56 +0000 2014","favourites_count":0,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":40846,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"022330","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/455361576178966528\/VZm0eh-e_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/455361576178966528\/VZm0eh-e_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2441831348\/1397403504","profile_link_color":"0084B4","profile_sidebar_border_color":"A8C7F7","profile_sidebar_fill_color":"C0DFEC","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":true,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":20,"favorite_count":36,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[],"media":[{"id":642382895705927684,"id_str":"642382895705927684","indices":[51,73],"media_url":"http:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","url":"http:\/\/t.co\/kyVe1A6lww","display_url":"pic.twitter.com\/kyVe1A6lww","expanded_url":"http:\/\/twitter.com\/oldpicsarchive\/status\/642382895835926528\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":430,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":568,"h":720,"resize":"fit"},"medium":{"w":568,"h":720,"resize":"fit"}}}]},"extended_entities":{"media":[{"id":642382895705927684,"id_str":"642382895705927684","indices":[51,73],"media_url":"http:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","url":"http:\/\/t.co\/kyVe1A6lww","display_url":"pic.twitter.com\/kyVe1A6lww","expanded_url":"http:\/\/twitter.com\/oldpicsarchive\/status\/642382895835926528\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":430,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":568,"h":720,"resize":"fit"},"medium":{"w":568,"h":720,"resize":"fit"}}}]},"favorited":true,"retweeted":true,"possibly_sensitive":false,"lang":"en"},"is_quote_status":false,"retweet_count":20,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"oldpicsarchive","name":"Old
+        Pics Archive","id":2441831348,"id_str":"2441831348","indices":[3,18]}],"urls":[],"media":[{"id":642382895705927684,"id_str":"642382895705927684","indices":[71,93],"media_url":"http:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","url":"http:\/\/t.co\/kyVe1A6lww","display_url":"pic.twitter.com\/kyVe1A6lww","expanded_url":"http:\/\/twitter.com\/oldpicsarchive\/status\/642382895835926528\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":430,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":568,"h":720,"resize":"fit"},"medium":{"w":568,"h":720,"resize":"fit"}},"source_status_id":642382895835926528,"source_status_id_str":"642382895835926528","source_user_id":2441831348,"source_user_id_str":"2441831348"}]},"extended_entities":{"media":[{"id":642382895705927684,"id_str":"642382895705927684","indices":[71,93],"media_url":"http:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/COoz1xRWsAQRUCN.jpg","url":"http:\/\/t.co\/kyVe1A6lww","display_url":"pic.twitter.com\/kyVe1A6lww","expanded_url":"http:\/\/twitter.com\/oldpicsarchive\/status\/642382895835926528\/photo\/1","type":"photo","sizes":{"small":{"w":340,"h":430,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":568,"h":720,"resize":"fit"},"medium":{"w":568,"h":720,"resize":"fit"}},"source_status_id":642382895835926528,"source_status_id_str":"642382895835926528","source_user_id":2441831348,"source_user_id_str":"2441831348"}]},"favorited":true,"retweeted":true,"possibly_sensitive":false,"lang":"en"}'
+    http_version: 
+  recorded_at: Fri, 11 Sep 2015 17:15:14 GMT
+recorded_with: VCR 2.9.3
