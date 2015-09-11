@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
   end
 
   def profile_image_url
-    service.connection.user.profile_image_url
+    service.connection.user.profile_image_url 
   end
 
   def tweets_count

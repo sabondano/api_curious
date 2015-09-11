@@ -52,15 +52,15 @@
               <span class="btn btn-favorite glyphicon glyphicon-star favorited-star"
                     aria-hidden="true"></span>
             <% else %>
-              <%= form_tag(favorite_path(tweet_id: tweet.id), method: :post) do %>
-                <button type="submit" class="btn btn-favorite">
+              <%= button_to(favorite_path(tweet_id: tweet.id),
+                            method: :post, 
+                            class: "btn btn-favorite") do %>
                   <span class="glyphicon glyphicon-star favorite-star"
                         aria-hidden="true"
                         data-toggle="tooltip"
                         data-placement="top"
                         title="Favorite">
                   </span>
-                </button>
               <% end %>
             <% end %>
             </div>

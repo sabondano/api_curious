@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy', as: 'logout'
   get '/dashboard', to: 'dashboard#show'
   root 'welcome#show'
-  post '/tweet', to: 'dashboard#tweet'
-  post '/favorite', to: 'dashboard#favorite'
+  post '/tweet', to: 'tweets#tweet'
+  post '/favorite', to: 'tweets#favorite'
 end
