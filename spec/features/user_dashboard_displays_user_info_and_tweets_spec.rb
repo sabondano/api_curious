@@ -8,7 +8,6 @@ feature "user dashbaord displays user info and tweets" do
   scenario "after log in with valid credentials" do
     VCR.use_cassette('user_logs_in_and_sees_feed_and_personal_info') do
       visit root_path
-
       click_link "Log In"
 
       expect(current_path).to eq("/dashboard")
