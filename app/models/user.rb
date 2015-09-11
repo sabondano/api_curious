@@ -44,4 +44,8 @@ class User < ActiveRecord::Base
   def favorite(tweet_id)
     service.connection.favorite(tweet_id)
   end
+
+  def retweet(tweet_id)
+    service.connection.retweet(tweet_id)
+  end
 end

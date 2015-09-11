@@ -48,19 +48,37 @@
                 @<%= tweet.user.screen_name %>
             </span>
             <p><%= tweet.full_text %></p>
+            <% if tweet.retweeted? %>
+              <span class="btn btn-retweet glyphicon glyphicon-retweet retweeted-arrows"
+                    aria-hidden="true"></span>
+            <% else %>
+              <%= form_tag(retweet_path(tweet_id: tweet.id),
+                                        method: :post,
+                                        class: "tweet-button") do %>
+                  <button type="submit" class="btn btn-retweet">
+                    <span class="glyphicon glyphicon-retweet retweet-arrows"
+                          aria-hidden="true"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Retweet">
+                    </span>
+                  </button>
+              <% end %>
+            <% end %>
             <% if tweet.favorited? %>
               <span class="btn btn-favorite glyphicon glyphicon-star favorited-star"
                     aria-hidden="true"></span>
             <% else %>
-              <%= button_to(favorite_path(tweet_id: tweet.id),
-                            method: :post, 
-                            class: "btn btn-favorite") do %>
-                  <span class="glyphicon glyphicon-star favorite-star"
-                        aria-hidden="true"
-                        data-toggle="tooltip"
-                        data-placement="top"
-                        title="Favorite">
-                  </span>
+              <%= form_tag(favorite_path(tweet_id: tweet.id),
+                                        method: :post,
+                                        class: "tweet-button") do %>
+                  <button type="submit" class="btn btn-favorite">
+                    <span class="glyphicon glyphicon-star favorite-star"
+                          aria-hidden="true"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Favorite">
+                    </span>
               <% end %>
             <% end %>
             </div>
@@ -69,7 +87,11 @@
       <% end %>
     </div>
     <div class="col-sm-3">
-      Who to follow
+      <small id="signature">
+        <span class="glyphicon glyphicon-copyright-mark
+        " aria-hidden="true"></span> 2015 
+      Lovingly made in Colorado at Turing School of Software &amp; Design by Sebastian Abondano
+      </small> 
     </div>
   </div>
 </div> <!-- /container-fluid -->

@@ -101,10 +101,13 @@ body {
     color: #8c9ca9;
     font-size: 13px;
   }
+  .tweet-button {
+    display: inline-block;
+  }
   .btn-favorite {
     padding: 0px;
     border: 0px;
-    margin-left: 60px;
+    margin-left: 20px;
     background-color: transparent;
   }
   .favorited-star {
@@ -120,6 +123,25 @@ body {
       color: #ffac33;
     }
   }
+  .btn-retweet {
+    padding: 0px;
+    border: 0px;
+    margin-left: 60px;
+    background-color: transparent;
+  }
+  .retweeted-arrows {
+    cursor: default;
+    opacity: 1;
+    color: #5c913b;
+  }
+  .retweet-arrows {
+    opacity: 0.3;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      color: #5c913b;
+    }
+  }
 }
 
 .tweet-form {
@@ -133,4 +155,9 @@ body {
     color: white;
     float: right;
   }
+}
+
+#signature {
+  color: #8c9ca9;
+  opacity: 0.6;
 }

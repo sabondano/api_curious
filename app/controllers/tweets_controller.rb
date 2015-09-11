@@ -13,4 +13,10 @@ class TweetsController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def retweet
+    current_user.retweet(params[:tweet_id])
+
+    redirect_to dashboard_path
+  end
+
 end

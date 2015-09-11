@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   root 'welcome#show'
   post '/tweet', to: 'tweets#tweet'
   post '/favorite', to: 'tweets#favorite'
+  post '/retweet', to: 'tweets#retweet'
 end
