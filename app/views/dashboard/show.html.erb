@@ -48,7 +48,12 @@
                 @<%= tweet.user.screen_name %>
             </span>
             <p><%= tweet.full_text %></p>
-            <span class="btn btn-reply glyphicon glyphicon-share-alt reply-arrow" aria-hidden="true"></span>
+            <span class="btn btn-reply glyphicon glyphicon-share-alt reply-arrow"
+                  aria-hidden="true"
+                  data-toggle="tooltip" 
+                  data-placement="top"
+                  title="Reply">
+            </span>
             <% if tweet.retweeted? %>
               <span class="btn btn-retweet glyphicon glyphicon-retweet retweeted-arrows"
                     aria-hidden="true"></span>
@@ -103,3 +108,10 @@
     </div>
   </div>
 </div> <!-- /container-fluid -->
+
+<!-- Make reply to tweet form appear -->
+<script>
+$(".glyphicon-share-alt").on("click", function() {
+  $(this).parents(".tweet").next(".reply-form").fadeToggle();
+});
+</script>
